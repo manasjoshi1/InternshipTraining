@@ -1,0 +1,6 @@
+package Stack_LinkedList;
+
+public class Driver {
+Stack s =  new Stack();
+s.push(10);
+}

@@ -1,0 +1,21 @@
+package Stack_LinkedList;
+
+public class Stack {
+	StackNode head;
+
+	public boolean isEmpty() {
+		if (head == null)
+			return true;
+		else
+			return false;
+	}
+	public void push(int data) {
+		StackNode newNode = new StackNode(data);
+		if(isEmpty()) {
+			head=newNode;
+		}
+		else {
+			
+		}
+	}
+}

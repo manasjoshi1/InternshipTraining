@@ -1,0 +1,68 @@
+package Music_Player_App;
+
+import java.util.LinkedList;
+import java.util.ListIterator;
+import java.util.Scanner;
+
+public class Driver {
+	public static Scanner sc = new Scanner(System.in);
+	static LinkedList<Song> playlist = new LinkedList<>();
+
+	public static void main(String[] args) {
+		ListIterator<Song> iterator = playlist.listIterator() ;
+		Song s1 =new Song("Drag me down"," one d");
+		Song s2 =new Song("Zingat","Sairat");
+		Song s3 =new Song("Night Changes"," one d");
+		playlist.add(s1);
+		playlist.add(s2);
+		playlist.add(s3);
+		boolean quit = false;
+		menuOption();
+		while (!quit) {
+
+			System.out.println("Enter your choice:");
+			int choice = sc.nextInt();
+			sc.nextLine();
+			switch (choice) {
+
+			case 0:
+				quit = true;
+				break;
+
+			case 1:
+				Song s= iterator.next();
+				System.out.println("now playing"+s.getSongName()+" from "+s.songMovie);
+				break;
+
+			case 3:
+				Song s= iterator.previous();
+				System.out.println("now playing"+s.getSongName()+" from "+s.songMovie);
+				break;
+
+			
+
+			default:
+				menuOption();
+			}
+		}
+
+	}
+	public static void menuOption() {
+		 	System.out.println("Press 0 to quit");
+	        System.out.println("Press 1 to play next");
+	        System.out.println("Press 2 to play prev");
+	      
+	}
+	public static void next() {
+        
+		
+		
+	}
+	public static void prev() {
+        ListIterator<Song> iterator = playlist.listIterator() ;
+
+		
+	}
+	
+	
+}

@@ -1,0 +1,11 @@
+package Music_Player_App;
+
+import java.util.LinkedList;
+import java.util.ListIterator;
+
+public class Player {
+	LinkedList<Song> playlist = new LinkedList<>();
+	ListIterator<Song> iterator=playlist.listIterator();
+	
+	
+}

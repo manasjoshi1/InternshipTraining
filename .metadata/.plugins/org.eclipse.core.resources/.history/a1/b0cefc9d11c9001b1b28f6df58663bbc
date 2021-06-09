@@ -1,0 +1,17 @@
+
+public class Matrix {
+	public static void main(String[] args) {
+		int row=0,col=0;
+
+		int [][] matrix1= new int[row][col];
+		for (int r =0;r<row;r++) {
+			for(int c =0; c<col;c++) {
+				System.out.println("Enter matrix1 (" +r+","+c+") value" );
+				
+			}
+		}
+		
+	}
+	
+
+}
