@@ -51,8 +51,16 @@ class Driver
 	public void insert(char new_data)
 	{
 		Node new_node = new Node(new_data);
-		new_node.next = head;
-		head = new_node;
+		if(head==null)
+			head=new_node;
+		else {
+			Node tmp=head;
+			while(tmp.next!=null) {
+				tmp=tmp.next;
+			}
+			tmp.next=new_node;}
+//		new_node.next = head;
+//		head = new_node;}
 	}
 
 	public void printList()
@@ -79,13 +87,11 @@ class Driver
 		l.insert('a');
 		l.insert('d');
 
-		char key = 'a' ;// key to delete
-
+		char key = 'a' ;
 		System.out.println("Created Linked list is:");
 		l.printList();
 
-		// Function call
-		l.deleteKey(key);
+				l.deleteKey(key);
 
 		System.out.println(
 			"\nLinked List after Deletion is:");
