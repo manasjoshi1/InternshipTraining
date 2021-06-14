@@ -1,4 +1,4 @@
-package Selection;
+package Sorting;
 
 
 public class Bubble {

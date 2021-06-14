@@ -1,4 +1,4 @@
-package Selection;
+package Sorting;
 
 public class Merge {
 public static void mergeSort(int list[],int low, int high){

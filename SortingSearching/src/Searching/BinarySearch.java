@@ -1,3 +1,7 @@
+//Binary Search Time compexity O(log n)
+//space complexity O(1)
+
+
 package Searching;
 
 import java.util.Arrays;
